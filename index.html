@@ -15,7 +15,8 @@
             <a href="..."><img class="header-logo" src="project-assets/logos/circle.svg" alt="logo-circle"></a>
             <ul class="navbar-ul">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Projects</a></li>
+                <li><a href="project.html" target="_blank" rel="noopener noreferrer">Projects</a></li>
+
                 <li><a href="index.html">Services</a></li>
             </ul>
             <a href="..." class="btn">Contact us</a>
@@ -78,39 +79,51 @@
             </div>
         </div>
     </section>
-    <section id="testimonial"></section>
-    <div class="testimonial-container">
-        <h3 class="h3-white">Hear What Our Clients Have to Say</h3>
-        <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
-        <div class="testimonial-img">
-            <img src="project-assets/testimonial-section/profile.png" alt="profile">
-            <p>Kristin Watson</p>
-            <p>Booking.com</p>
-            <img class="testimonial1" src="project-assets/testimonial-section/memoji-1.png" alt="testimonial 1" />
-            <img class="testimoial2" src="project-assets/testimonial-section/memoji-2.png" alt="testimonial 2" />
-            <img class="testimonial3" src="project-assets/testimonial-section/memoji-3.png" alt="testimonial 3" />
-            <img class="testimonial4" src="project-assets/testimonial-section/memoji-4.png" alt="testimonial 4" />
+    <section id="testimonial">
+        <div class="testimonial-container">
+            <div class="testimonial-text">
+                <h3 class="h3-white">Hear What Our Clients Have to Say</h3>
+                <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+                <div class="testimonial-img">
+                    <img class="testimonial-pic" src="project-assets/testimonial-section/profile.png" alt="profile">
+                    <div>
+                        <p class="caption1-regular">Kristin Watson</p>
+                        <p class="caption2-regular">Booking.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memoji">
+                <img class="testimonial1" src="project-assets/testimonial-section/memoji-1.png" alt="testimonial 1" />
+                <img class="testimonial2" src="project-assets/testimonial-section/memoji-2.png" alt="testimonial 2" />
+                <img class="testimonial3" src="project-assets/testimonial-section/memoji-3.png" alt="testimonial 3" />
+                <img class="testimonial4" src="project-assets/testimonial-section/memoji-4.png" alt="testimonial 4" />
+            </div>
         </div>
-    </div>
+    </section>
     <section id="services">
         <div>
             <h3>Our Services</h3>
             <div class="services-slide">
                 <div class="unit-slide">
-                    <img src="project-assets/services-section/icons/1.svg" alt="service 1">
+                    <div class="icon-img">
+                        <img src="project-assets/services-section/icons/1.svg" alt="service 1">
+                    </div>
                     <div class="slide-text">
                         <h4>User Interface Design</h4>
-                        <p class="p-description">Circle provides you with a stunning user interface design that is
+                        <p class="body-intro-regular">Circle provides you with a stunning user interface design that is
                             accessible to everyone.</p>
                         <a href="http://..."> Learn more</a>
                     </div>
                 </div>
 
                 <div class="unit-slide">
-                    <img src="project-assets/services-section/icons/2.svg" alt="service 2">
+                    <div class="icon-img">
+                        <img src="project-assets/services-section/icons/2.svg" alt="service 2">
+                    </div>
                     <div class="slide-text">
                         <h4>User Experience Design</h4>
-                        <p class="p-description">Circle always focuses on delivering the best user experience to your
+                        <p class="body-intro-regular">Circle always focuses on delivering the best user experience to
+                            your
                             customers.</p>
                         <a href="http://..."> Learn more</a>
                     </div>
@@ -121,7 +134,8 @@
                     </div>
                     <div class="slide-text">
                         <h4>Application Development</h4>
-                        <p class="p-description">We develop high-quality mobile and web applications using the latest
+                        <p class="body-intro-regular">We develop high-quality mobile and web applications using the
+                            latest
                             technology stack.</p>
                         <a href="http://..."> Learn more</a>
                     </div>
@@ -134,23 +148,27 @@
             <div>
                 <h3>Do You Have Any Questions?</h3>
                 <p>Let us help you!</p>
-            </div>
-            <div class="contact-form">
-                <form></form>
-            </div>
 
+                <form class="form-contact" action="htpps//www.google.es" method="post">
+                    <div class="form-email">
+                        <input type="email" name="contact-form" placeholder="Enter your email">
+                        <img src="project-assets/newsletter/icon/mail.svg" alt="email">
+                    </div>
+                    <button type="submit" class="btn-form">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer id="footer">
-        <div>
+        <div class="footer-container">
             <div>
                 <a href="http://www.google.es" target="_blank" rel="noopener noreferrer"><img
                         src="project-assets/logos/circle.svg" alt="circle-logo"> </a>
-                <p>direction</p>
+                <p class="caption2-regular">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
             </div>
-            <div>
+            <div class="footer-list">
                 <ul>
-                    <li>Team</li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Team</a>
                     <li>Services</li>
                     <li>About Us</li>
                 </ul>

@@ -9,24 +9,17 @@ body {
 h1 {
     font-size: 60px;
     font-weight: 700;
-    line-height: 70px;
-    letter-spacing: 0em;
-    text-align: left;
-
 }
 
 h2 {
     font-size: 50px;
     font-weight: 700;
-    line-height: 59px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 h3 {
     font-size: 40px;
     font-weight: 700;
-
+    margin: 0px;
 }
 
 .h3-white {
@@ -36,13 +29,46 @@ h3 {
 h4 {
     font-size: 24px;
     font-weight: 700;
-    /* line-height: 28px;
-    letter-spacing: 0em; */
-    text-align: left;
+}
+
+.body-intro-medium {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.body-intro-regular {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.headline-text-medium {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.headline-text-regular {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.caption1-regular {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.caption2-regular {
+    font-size: 13px;
+    font-weight: 400;
 }
 
 a {
     text-decoration: none;
+    color: #6B708D;
+}
+
+a :hover {
+    font-weight: 700;
+    color: #072AC8;
 }
 
 .btn {
@@ -76,10 +102,8 @@ header {
 }
 
 .header-logo {
-    height: 18.45703125px;
-    width: 60.52734375px;
-    left: 170.64453125px;
-    top: 86.90625px;
+    height: 18px;
+    width: 60px;
     border-radius: 0px;
 
 }
@@ -115,18 +139,18 @@ header {
 }
 
 .hero-content {
-    align-items: center;
     flex: 1;
+    margin-top: 109px;
+    width: 210px;
+    height: 530px;
+    padding-right: 0px;
 }
 
 .hero-content p {
     font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding: 30px 0px;
+    margin-top: 30px;
     height: 90px;
 }
 
@@ -163,18 +187,14 @@ header {
 
 /* CLIENT STYLES */
 
-#client {
+.client-link {
+    margin: 130px 170px 0px 170px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 96px;
     filter: grayscale(100%);
-    margin-top: 130px;
-}
-
-.client-link {
-    margin: 0px 170px;
 }
 
 .client-link a {
@@ -197,6 +217,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    margin-top: 70px;
 }
 
 .slide {
@@ -224,26 +245,31 @@ header {
     background-color: #292E47;
     height: 622px;
     margin: 200px 60px 0px 60px;
+    position: relative;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    /* position: absolute; */
 }
 
+.testimonial-text {}
 
 .testimonial-container p {
     color: #FFC600;
     font-size: 24px;
     font-weight: 500;
+    width: 382px;
 }
 
-.testtimonial-img {
+.testimonial-img {
+    display: flex;
     flex-direction: row;
+
 }
 
-.testimonial-img img {
-    border-radius: 100px;
+.testimonial-pic {
+    border-radius: 50%;
     width: 50px;
     height: 50px;
 }
@@ -251,9 +277,37 @@ header {
 .testimonial1 {
     height: 150px;
     width: 150px;
-    z-index: 0;
-    top: 0px;
-    left: 0px;
+    z-index: 1;
+    top: 51px;
+    left: 76px;
+    position: absolute;
+}
+
+.testimonial2 {
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+    top: 51px;
+    right: 72px;
+    position: absolute;
+}
+
+.testimonial3 {
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+    bottom: 73px;
+    left: 76px;
+    position: absolute;
+}
+
+.testimonial4 {
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+    bottom: 73px;
+    right: 72px;
+    position: absolute;
 }
 
 /* SERVICES STYLES */
@@ -263,20 +317,19 @@ header {
     /* position: absolute; */
 }
 
+.icon-img img {
+    height: 50px;
+    width: 50px;
+}
+
 .icon-img {
     height: 80px;
     width: 80px;
     background-color: #ECF7FF;
     border-radius: 80px;
-    position: absolute;
-    z-index: 2;
-}
-
-.icon-img img {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .services-slide {
@@ -301,11 +354,6 @@ header {
     height: 204px;
 }
 
-.p-description {
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 0px;
-}
 
 
 
@@ -315,4 +363,56 @@ header {
     height: 500px;
     margin: 136px 60px 0px 60px;
     background-color: #FFC600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-contact {
+    display: flex;
+    margin-top: 50px;
+}
+
+.form-email {
+    position: relative;
+}
+
+.form-email img {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.form-email input {
+    height: 80px;
+    width: 393px;
+    border: 0px;
+    padding-left: 70px;
+    margin-right: 20px;
+}
+
+.btn-form {
+    border: 0px;
+    background-color: #072AC8;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 15px 36px;
+}
+
+/* FOOTER STYLES */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer-list {
+    list-style: none;
 }
