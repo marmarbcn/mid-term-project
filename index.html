@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="styles/style.css">
+
     <title>Circle Midterm Project</title>
 </head>
 
@@ -14,10 +15,10 @@
         <div id="navbar">
             <a href="..."><img class="header-logo" src="project-assets/logos/circle.svg" alt="logo-circle"></a>
             <ul class="navbar-ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html" target="_blank" rel="noopener noreferrer">Projects</a></li>
+                <li><a class="a-hover a-selected" href="index.html">Home</a></li>
+                <li><a class="a-hover" href="project.html">Projects</a></li>
 
-                <li><a href="index.html">Services</a></li>
+                <li><a class=" a-hover" href="index.html">Services</a></li>
             </ul>
             <a href="..." class="btn">Contact us</a>
         </div>
@@ -29,7 +30,9 @@
                 <p>Circle is a digital design and development studio. We design and develop astonishing websites and
                     mobile apps.</p>
                 <a href="..." class="btn">Get in touch</a>
-                <a href="See our work" class="btn-nobackground">See our work</a>
+                <a href="See our work" class="btn-nobackground headline-text-medium color-neutral-medium a-hover">See
+                    our
+                    work</a>
             </div>
             <div class="hero-image-container">
                 <div class="card1"><img src="project-assets/hero-section/card-1.png" alt="card1"></div>
@@ -53,27 +56,28 @@
             <div class="projects-slide">
                 <div class="slide">
                     <img src="project-assets/projects-section/1.jpg" alt="project 1">
-                    <div class="slide-text">
+                    <div class="slide-text-project">
                         <h4>Simplify</h4>
                         <p class="p-description">UI Design & App Development</p>
-                        <a href="http://..."> Learn more</a>
+                        <a class="a-hover color-primary-default headline-text-regular a-bottom" href="http://..."> Learn
+                            more</a>
                     </div>
                 </div>
 
                 <div class="slide">
                     <img src="project-assets/projects-section/2.jpg" alt="project 2">
-                    <div class="slide-text">
+                    <div class="slide-text-project">
                         <h4>Dashcoin</h4>
                         <p class="p-description">Web Development</p>
-                        <a href="http://..."> Learn more</a>
+                        <a class="a-hover color-primary-default headline-text-regular" href="http://..."> Learn more</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="project-assets/projects-section/3.jpg" alt="project 3">
-                    <div class="slide-text">
+                    <div class="slide-text-project">
                         <h4>Vectorify</h4>
                         <p class="p-description">User Experience Design</p>
-                        <a href="http://..."> Learn more</a>
+                        <a class="a-hover color-primary-default headline-text-regular" href="http://..."> Learn more</a>
                     </div>
                 </div>
             </div>
@@ -83,12 +87,15 @@
         <div class="testimonial-container">
             <div class="testimonial-text">
                 <h3 class="h3-white">Hear What Our Clients Have to Say</h3>
-                <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+                <p class="color-secondary body-intro-medium secondary-text">“Circle helped us through every stage of our
+                    startup. We
+                    really enjoyed
+                    working with you.”</p>
                 <div class="testimonial-img">
                     <img class="testimonial-pic" src="project-assets/testimonial-section/profile.png" alt="profile">
-                    <div>
-                        <p class="caption1-regular">Kristin Watson</p>
-                        <p class="caption2-regular">Booking.com</p>
+                    <div class="">
+                        <p class="caption1-regular color-primary-hover">Kristin Watson</p>
+                        <p class="caption2-regular color-neutral-light">Booking.com</p>
                     </div>
                 </div>
             </div>
@@ -109,10 +116,13 @@
                         <img src="project-assets/services-section/icons/1.svg" alt="service 1">
                     </div>
                     <div class="slide-text">
-                        <h4>User Interface Design</h4>
-                        <p class="body-intro-regular">Circle provides you with a stunning user interface design that is
+                        <p class="body-intro-medium color-neutral-dark">User Interface Design</p>
+                        <p class="body-intro-regular color-neutral-medium">Circle provides you with a stunning user
+                            interface design that is
                             accessible to everyone.</p>
-                        <a href="http://..."> Learn more</a>
+                        <div class="spacer"></div>
+                        <a class="a-hover color-primary-default headline-text-regular a-bottom" href="http://..."> Learn
+                            more</a>
                     </div>
                 </div>
 
@@ -121,11 +131,13 @@
                         <img src="project-assets/services-section/icons/2.svg" alt="service 2">
                     </div>
                     <div class="slide-text">
-                        <h4>User Experience Design</h4>
-                        <p class="body-intro-regular">Circle always focuses on delivering the best user experience to
+                        <p class="body-intro-medium color-neutral-dark">User Experience Design</p>
+                        <p class="body-intro-regular color-neutral-medium">Circle always focuses on delivering the best
+                            user experience to
                             your
                             customers.</p>
-                        <a href="http://..."> Learn more</a>
+                        <div class="spacer"></div>
+                        <a class="a-hover color-primary-default headline-text-regular" href="http://..."> Learn more</a>
                     </div>
                 </div>
                 <div class="unit-slide">
@@ -133,11 +145,13 @@
                         <img src="project-assets/services-section/icons/3.svg" alt="service 3">
                     </div>
                     <div class="slide-text">
-                        <h4>Application Development</h4>
-                        <p class="body-intro-regular">We develop high-quality mobile and web applications using the
+                        <p class="body-intro-medium color-neutral-dark">Application Development</p>
+                        <p class="body-intro-regular color-neutral-medium">We develop high-quality mobile and web
+                            applications using the
                             latest
                             technology stack.</p>
-                        <a href="http://..."> Learn more</a>
+                        <div class="spacer"></div>
+                        <a class="a-hover color-primary-default headline-text-regular" href="http://..."> Learn more</a>
                     </div>
                 </div>
             </div>
@@ -162,13 +176,14 @@
     <footer id="footer">
         <div class="footer-container">
             <div>
-                <a href="http://www.google.es" target="_blank" rel="noopener noreferrer"><img
+                <a class="a-hover" href="http://www.google.es" target="_blank" rel="noopener noreferrer"><img
                         src="project-assets/logos/circle.svg" alt="circle-logo"> </a>
-                <p class="caption2-regular">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+                <p class="caption2-regular">2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
             </div>
             <div class="footer-list">
                 <ul>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Team</a>
+                    <li><a class="a-hover headline-text-regular color-neutral-medium" href="http://" target="_blank"
+                            rel="noopener noreferrer">Team</a>
                     <li>Services</li>
                     <li>About Us</li>
                 </ul>
