@@ -3,14 +3,32 @@
 html,
 body {
     background-color: #f2f4fc;
-    font-family: roboto;
+
 }
 
+html,
+body,
+input,
+textarea {
+    font-family: Roboto;
+}
 
 /* TEXT STYLES */
 h1 {
     font-size: 60px;
     font-weight: 700;
+}
+
+@media (max-width: 1007px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 24px;
+    }
 }
 
 h2 {
@@ -68,9 +86,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: initial;
-}
 
 .a-hover:hover {
     font-weight: 700;
@@ -184,12 +199,20 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 70px;
-    margin-left: 170px;
-    margin-right: 170px;
+    margin: 70px 170px 0 170px;
     align-items: center;
+}
 
+@media (max-width: 1007px) {
+    #navbar {
+        margin: 40px 40px 0 40px;
+    }
+}
 
+@media (max-width: 640px) {
+    #navbar {
+        margin: 0;
+    }
 }
 
 .navbar-ul {
@@ -210,12 +233,42 @@ header {
     flex-direction: row;
 }
 
+@media (max-width:1007px) {
+    .hero-container {
+        margin: 0 40px 0 40px;
+        background-color: #FFC600;
+        height: 300px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-container {
+        margin: 0 10px 0 10px;
+        background-color: #FFC600;
+    }
+}
+
+
+
 .hero-content {
     flex: 1;
     margin-top: 109px;
     width: 210px;
     height: 530px;
     padding-right: 0px;
+}
+
+@media (max-width:1007px) {
+    .hero-content {
+        margin: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-content {
+        margin: 0;
+    }
 }
 
 .hero-content p {
@@ -279,6 +332,18 @@ header {
     margin: 200px 170px 0px 170px;
 }
 
+@media (max-width: 1007px) {
+    #projects {
+        margin: 0px 40px 0 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    #projects {
+        margin: 0 10px 0 10px
+    }
+}
+
 .projects-slide img {
     height: 240px;
     width: 340px;
@@ -308,12 +373,6 @@ header {
 }
 
 
-.p-description {
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 0px;
-}
-
 /* TESTIMONIAL STYLES */
 
 .testimonial-container {
@@ -326,6 +385,18 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@media (max-width: 1007px) {
+    .testimonial-container {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .testimonial-container {
+        display: none;
+    }
 }
 
 .testimonial-text {
@@ -398,7 +469,18 @@ header {
 
 #services {
     margin: 200px 170px 0px 170px;
-    /* position: absolute; */
+}
+
+@media (max-width:1007px) {
+    #services {
+        margin: 0 40px 0 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    #services {
+        margin: 0 10px 0 10px;
+    }
 }
 
 .icon-img img {
@@ -530,11 +612,33 @@ header {
     margin: 140px 170px 0px 170px;
 }
 
+.description-main-project {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-top: 80px;
+
+}
+
 .main-project-img {
     width: 100%;
     height: 444px;
     object-fit: cover;
-    box-shadow: 0 0 30px #ccc;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    /* margin-bottom: 70px; */
+}
+
+.main-project-img-back {
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+    filter: blur(20px);
+    z-index: 0;
+    display: flex;
+    margin-bottom: 70px;
 }
 
 .title-main-project {
@@ -542,4 +646,87 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.p-main-project {
+    line-height: 30px;
+    vertical-align: top;
+}
+
+/* CONTACT PAGE STYLES */
+.contact-page-form-extended {
+    margin: 146px 170px 154px 170px;
+}
+
+.form-extended label {
+    display: block;
+}
+
+.form-extended input {
+    border: 0px;
+    background-color: #6B708D1A;
+    opacity: 90%;
+    height: 70px;
+    width: 100%;
+}
+
+.form-extended-row {
+    margin-top: 40px;
+}
+
+.form-extended-email-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.form-extended-email-phone input {
+    width: 100%;
+}
+
+input::placeholder {
+    padding: 20px;
+}
+
+.form-extended-email,
+.form-extended-phone {
+    flex: 1;
+}
+
+button.btn {
+    border: 0px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+textarea {
+    border: 0px;
+    background-color: #6B708D1A;
+    opacity: 90%;
+    height: 200px;
+    width: 100%;
+    font-family: roboto;
+}
+
+textarea::placeholder {
+    padding: 20px;
+}
+
+
+/* TABLET SIZES */
+@media (max-width: 1007px) {
+
+    .tablet-hidden {
+        display: none;
+    }
+
+    .tablet-title {
+        font-size: 24px;
+    }
+
+    .table-font {
+        font-size: 16px;
+    }
+
+
 }
