@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Circle Midterm Project - Contact Us!</title>
 </head>
@@ -25,30 +26,30 @@
         <div class="contact-page-form-extended">
             <div>
                 <h1 class="color-neutral-dark">Contact Us</h1>
-                <form class="form-extended" action="htpps//www.google.es" method="post">
+                <form class="form-extended">
                     <div class="form-extended-row">
                         <label for="name" class="body-intro-regular color-neutral-medium">Full Name *</label>
                         <input type="text" name="name" placeholder="Enter your full name"
-                            class="headline-text-regular color-neutral-medium">
+                            class="headline-text-regular color-neutral-medium" required>
                     </div>
                     <div class="form-extended-email-phone form-extended-row">
                         <div class="form-extended-email">
                             <label for="email" class="body-intro-regular color-neutral-medium">Email</label>
                             <input type="email" name="email" placeholder="Enter your email address"
-                                class="headline-text-regular color-neutral-medium">
+                                class="headline-text-regular color-neutral-medium" required>
                         </div>
                         <div class="form-extended-phone">
                             <label for="phone" class="body-intro-regular color-neutral-medium">Phone</label>
                             <input type="number" name="phone" placeholder="Enter your phone number"
-                                class="headline-text-regular color-neutral-medium">
+                                class="headline-text-regular color-neutral-medium" required min="9">
                         </div>
                     </div>
                     <div class="form-extended-row">
                         <label for="message" class="body-intro-regular color-neutral-medium">Message</label>
                         <textarea name="message" placeholder="Write your message here ..."
-                            class="headline-text-regular color-neutral-medium"></textarea>
+                            class="headline-text-regular color-neutral-medium" required></textarea>
                     </div>
-                    <button type="submit" class="btn headline-text-medium">Submit</button>
+                    <button type="submit" class="btn headline-text-medium btn-submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -77,6 +78,7 @@
             </div>
         </div>
     </footer>
+    <script src="./contact.js"> </script>
 </body>
 
 </html>
