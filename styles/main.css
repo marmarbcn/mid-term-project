@@ -110,6 +110,12 @@ a {
     display: inline-block;
 }
 
+@media (max-width: 1007px) {
+    .btn {
+        border-radius: 20px;
+    }
+}
+
 .btn:hover {
     font-weight: 700;
     color: #A2D6F9;

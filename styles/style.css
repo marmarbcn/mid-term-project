@@ -423,22 +423,23 @@ header {
     border: 0px;
     background-color: #6B708D1A;
     opacity: 90%;
-    height: 70px;
-    width: 100%;
 }
 
 .form-extended-row {
     margin-top: 40px;
 }
 
+.form-extended-name,
+.form-extended-phone,
+.form-extended-email {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-extended-email-phone {
     display: flex;
     flex-direction: row;
     gap: 40px;
-}
-
-.form-extended-email-phone input {
-    width: 100%;
 }
 
 input,
@@ -462,7 +463,6 @@ textarea {
     background-color: #6B708D1A;
     opacity: 90%;
     height: 200px;
-    width: 100%;
     font-family: roboto;
 }
 
@@ -488,6 +488,10 @@ textarea {
         margin-top: 50px;
     }
 
+    #client {
+        background-color: white;
+        margin: 20px 40px 0 40px;
+    }
 
     .tablet-hidden {
         display: none;
@@ -570,7 +574,7 @@ textarea {
     }
 
     #client {
-        margin-top: 50px;
+        margin: 20px 0 0 0;
     }
 
     .client-link {
