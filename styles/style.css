@@ -305,12 +305,12 @@ header {
 
 .form-email img {
     position: absolute;
-    top: 25px;
+    top: 13px;
     left: 30px;
+
 }
 
 .form-email input {
-    height: 80px;
     width: 393px;
     border: 0px;
     padding-left: 70px;
@@ -332,13 +332,12 @@ header {
 
 /* FOOTER STYLES */
 #footer {
-    margin-top: 170px;
+    margin: 30px 170px 30px 170px;
 }
 
 .footer-container {
     display: flex;
     flex-direction: row;
-    margin: 30px 170px 100px 170px;
     justify-content: space-between;
 
 }
@@ -352,11 +351,6 @@ header {
 }
 
 .footer-list ul:last-child {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 106px;
     margin-top: 60px;
 }
 
@@ -484,6 +478,11 @@ textarea {
         margin: 50px 40px 0 40px;
     }
 
+    #footer {
+        margin: 50px 40px 30px 40px;
+    }
+
+
     #testimonial {
         margin-top: 50px;
     }
@@ -569,8 +568,44 @@ textarea {
 
     #services,
     #projects,
-    #hero {
+    #hero,
+    #main-project {
         margin: 50px 50px 0 50px;
+    }
+
+
+
+    .footer-container {
+        flex-direction: column;
+        border: 2px dotted #072AC8;
+        padding: 20px;
+        border-radius: 15px;
+
+    }
+
+    .logo-footer {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px dotted #072AC8;
+        margin-bottom: 20px;
+    }
+
+    .title-main-project {
+        flex-wrap: wrap;
+    }
+
+    .footer-list ul {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        gap: 0px;
+        justify-content: space-around;
+    }
+
+    .footer-list ul:last-child {
+        margin-top: 20px;
     }
 
     #client {
@@ -594,6 +629,7 @@ textarea {
     .projects-slide {
         flex-wrap: wrap;
     }
+
 
     .slide {
         flex: 1 0 100%;
