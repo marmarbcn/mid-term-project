@@ -1,4 +1,4 @@
-const SERVER_URL = 'http://192.168.0.21:3000/contacts'
+const SERVER_URL = 'http://localhost:3000/contacts'
 window.onload = () => {
 
 

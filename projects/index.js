@@ -1,4 +1,4 @@
-const url = 'http://192.168.0.21:3000/projects';
+const url = 'http://localhost:3000/projects';
 
 window.onload = () => {
     const getQueryUuid = () => {
